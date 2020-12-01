@@ -1,0 +1,49 @@
+
+public class PilhaDePontos {
+	private int topo = -1;
+	private Ponto[] pontos = new Ponto[1000];
+
+	public boolean vazia() {
+		if (topo < 0) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+
+	public boolean cheia() {
+		if (topo == 999) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+
+	public void empilha(Ponto ponto) {
+		if (topo >= 999) {
+			System.out.println("Pilha cheia");
+		} else {
+			pontos[++topo] = ponto;
+			System.out.println(ponto + " adicionado a pilha");
+		}
+	}
+
+	public Ponto desempilha() {
+		if (topo < 0) {
+			System.out.println("Pilha vazia");
+			return null;
+		} else {
+			Ponto ponto = pontos[topo--];
+			System.out.println(ponto + " desempilhado");
+			return ponto;
+		}
+	}
+
+	public Ponto itemTopo() {
+		return pontos[topo];
+	}
+
+	public int quantEmpilhados() {
+		return topo + 1;
+	}
+}

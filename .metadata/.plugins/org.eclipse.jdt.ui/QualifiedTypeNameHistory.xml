@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="Posicao.Status"/>
+<fullyQualifiedTypeName name="Pieces.CorPosicao"/>
+<fullyQualifiedTypeName name="Posicao"/>
+<fullyQualifiedTypeName name="StatusPosicao"/>
+<fullyQualifiedTypeName name="CorPosicao"/>
+<fullyQualifiedTypeName name="Tabuleiro"/>
+<fullyQualifiedTypeName name="StatusJogo"/>
+<fullyQualifiedTypeName name="Pieces.Rei"/>
+<fullyQualifiedTypeName name="Pieces.Teams"/>
+<fullyQualifiedTypeName name="SegmentoDeReta"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
+</qualifiedTypeNameHistroy>

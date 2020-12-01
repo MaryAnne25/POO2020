@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename field &apos;itens&apos; in &apos;PilhaDeCirculos&apos; to &apos;circulos&apos;&#x0D;&#x0A;- Original project: &apos;EX2&apos;&#x0D;&#x0A;- Original element: &apos;PilhaDeCirculos.itens&apos;&#x0D;&#x0A;- Renamed element: &apos;PilhaDeCirculos.circulos&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" delegate="false" deprecate="false" description="Rename field &apos;itens&apos;" flags="589826" getter="false" id="org.eclipse.jdt.ui.rename.field" input="/src&lt;{PilhaDeCirculos.java[PilhaDeCirculos^itens" name="circulos" references="true" setter="false" stamp="1605293419221" textual="false" version="1.0"/>
+</session>

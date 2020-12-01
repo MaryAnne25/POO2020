@@ -1,0 +1,45 @@
+import java.util.Arrays;
+
+public class Palavra {
+	private String nome;
+	private String tipo;
+	private Significado [] significados;
+	
+	public Palavra(String nome, String tipo, String significado) {
+		this.nome = nome;
+		this.tipo = tipo;
+		this.significados = new Significado[1];
+		this.significados[0].setSignificado(significado);
+	}
+	
+	public Palavra(String nome, String tipo, String significado1, String significado2) {
+		this.nome = nome;
+		this.tipo = tipo;
+		this.significados = new Significado[2];
+		this.significados[0].setSignificado(significado1);
+		this.significados[1].setSignificado(significado2);
+	}
+	
+	public Palavra(String nome, String tipo, String significado1, String significado2, String significado3) {
+		this.nome = nome;
+		this.tipo = tipo;
+		this.significados = new Significado[3];
+		significados[0].setSignificado(significado1);
+		significados[1].setSignificado(significado2);
+		significados[2].setSignificado(significado3);
+	}
+	
+	public String getPalavra() {
+		return this.nome;
+	}
+	
+	public String getTipo() {
+		return this.tipo;
+	}
+	
+	public void imprimir() {
+		System.out.println(this.nome);
+		System.out.println(this.tipo);
+		System.out.println(Arrays.toString(significados));
+	}
+}

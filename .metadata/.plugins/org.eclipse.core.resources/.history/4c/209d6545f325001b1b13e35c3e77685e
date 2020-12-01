@@ -1,0 +1,76 @@
+import java.util.ArrayList;
+
+public class Dicionario {
+	private String idioma;
+	private int quantPalavras;
+	private ArrayList<Palavra> palavras;
+	private static final int MAXPALAVRAS = 1000;
+
+	Dicionario(String idioma) {
+		this.idioma = idioma;
+		this.quantPalavras = MAXPALAVRAS;
+		this.palavras = new ArrayList<Palavra>(this.quantPalavras);
+		
+	}
+
+	Dicionario(String idioma, int maxPalavras) {
+		this.idioma = idioma;
+		this.quantPalavras = maxPalavras;
+		this.palavras = new ArrayList<Palavra>(this.quantPalavras);
+	}
+
+	public void adicionarPalavra(String nome, String tipo, String significado) {
+		Palavra palavra = new Palavra(nome, tipo, significado);
+		if (checarRepetida(palavra)) {
+			System.out.println("Palavra já presente no dicionário");
+		}
+		else {
+			palavras.add(palavra);
+		}
+	}
+
+	public void adicionarPalavra(String nome, String tipo, String significado1, String significado2) {
+		Palavra palavra = new Palavra(nome, tipo, significado1, significado2);
+		if (checarRepetida(palavra)) {
+			System.out.println("Palavra já presente no dicionário");
+		}
+		else {
+			palavras.add(palavra);
+		}
+	}
+	
+	public void adicionarPalavra(String nome, String tipo, String significado1, String significado2, String significado3) {
+		Palavra palavra = new Palavra(nome, tipo, significado1, significado2, significado3);
+		if (checarRepetida(palavra)) {
+			System.out.println("Palavra já presente no dicionário");
+		}
+		else {
+			palavras.add(palavra);
+		}
+	}
+	
+	private boolean checarRepetida(Palavra palavra) {
+		return palavras.contains(palavra);
+	}
+
+	public void imprimir() {
+		if(palavras.isEmpty()) {
+			System.out.println("Dicionario vazio!");
+			return;
+		}
+		for(int i = 0; i < palavras.size(); i++) {
+			palavras.get(i).imprimir();
+		}
+	}
+	
+	public void imprimir(String palavra) {
+		for(int i = 0; i < palavras.size(); i++) {
+			if (palavras.get(i).getPalavra() == palavra) {
+				palavras.get(i).imprimir();
+				return;
+			}
+		}
+		System.out.println("Palavra não se encontra no dicionário");
+		return;
+	}
+}

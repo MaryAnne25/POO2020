@@ -1,0 +1,49 @@
+
+public class PilhaDeCirculos {
+	private int topo = -1;
+	private Circulo[] circulos = new Circulo[1000];
+
+	public boolean vazia() {
+		if (topo < 0) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+
+	public boolean cheia() {
+		if (topo == 999) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+
+	public void empilha(Circulo circulo) {
+		if (topo >= 999) {
+			System.out.println("Pilha cheia");
+		} else {
+			circulos[++topo] = circulo;
+			System.out.println(circulo + " adicionado a pilha");
+		}
+	}
+
+	public Circulo desempilha() {
+		if (topo < 0) {
+			System.out.println("Pilha vazia");
+			return null;
+		} else {
+			Circulo circulo = circulos[topo--];
+			System.out.println(circulo + " desempilhado");
+			return circulo;
+		}
+	}
+
+	public Circulo itemTopo() {
+		return circulos[topo];
+	}
+
+	public int quantEmpilhados() {
+		return topo + 1;
+	}
+}

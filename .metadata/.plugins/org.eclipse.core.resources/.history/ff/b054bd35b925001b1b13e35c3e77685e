@@ -1,0 +1,14 @@
+
+public class Teste {
+
+	public static void main(String[] args) {
+		Ponto centro1 = new Ponto(1, 2); 
+		Circulo c1 = new Circulo(centro1, 3);
+		centro1.imprimir();
+		c1.imprimir();
+		
+		System.out.println(c1.posicaoPonto(centro1));
+
+	}
+
+}

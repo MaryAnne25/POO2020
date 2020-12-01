@@ -1,0 +1,16 @@
+
+public class Significado {
+	private String descricao;
+	
+	public void setSignificado(String significado) {
+		this.descricao = significado;
+	}
+	
+	public String getSignificado() {
+		return this.descricao;
+	}
+	
+	public void imprimir() {
+		System.out.println(descricao);
+	}
+}

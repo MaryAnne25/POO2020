@@ -1,0 +1,13 @@
+content_assist_disabled_computers=org.eclipse.jdt.ui.javaChainProposalCategory\u0000org.eclipse.jdt.ui.textProposalCategory\u0000
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="java.lang.Enum"><rhs name\="Posicao$Status"/><rhs name\="StatusPosicao"/><rhs name\="CorPosicao"/><rhs name\="Pieces.Teams"/></lhs><lhs name\="Posicao$Status"><rhs name\="Posicao$Status"/></lhs><lhs name\="StatusPosicao"><rhs name\="StatusPosicao"/></lhs><lhs name\="Posicao"><rhs name\="Posicao"/></lhs><lhs name\="CorPosicao"><rhs name\="CorPosicao"/></lhs><lhs name\="Tabuleiro"><rhs name\="Tabuleiro"/></lhs><lhs name\="Pieces.Teams"><rhs name\="Pieces.Teams"/></lhs><lhs name\="SegmentoDeReta"><rhs name\="SegmentoDeReta"/></lhs></history>
+content_assist_number_of_computers=14
+content_assist_proposals_background=255,255,255
+content_assist_proposals_foreground=0,0,0
+eclipse.preferences.version=1
+org.eclipse.jdt.internal.ui.navigator.layout=2
+org.eclipse.jdt.internal.ui.navigator.librariesnode=true
+org.eclipse.jdt.ui.formatterprofiles.version=19
+spelling_locale_initialized=true
+spelling_user_dictionary_encoding=
+useAnnotationsPrefPage=true
+useQuickDiffPrefPage=true
